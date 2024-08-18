@@ -1,4 +1,4 @@
-package comm.testing.medicure_app_testing;
+package com.testing.insure_me_test_app;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
