@@ -20,6 +20,7 @@ public class App
     	options.addArguments("--headless");
     	
 	 	WebDriver driver = new ChromeDriver(options);
+
 	 	
 	 	//open the web application
         driver.get("http://54.163.195.231:8082/contact.html");
@@ -51,11 +52,11 @@ public class App
         Thread.sleep(2000);
         
         //5. Locate Send Button and click to send the message.
-        WebElement sendButton = driver.findElement(By.id("message"));
+        WebElement sendButton = driver.findElement(By.xpath("/html/body/section/div/div[2]/div[1]/div/div[4]/button"));
         sendButton.click();
         Thread.sleep(2000);
         
-        String response = driver.findElement(By.id("response")).getText();
+        String response = driver.findElement(By.id("message")).getText();
         System.out.println(response);
                 
         driver.quit();
